@@ -11,6 +11,38 @@ class HomePageState extends State<HomePage> {
     return new Scaffold(
       appBar: new AppBar(
         title: new Text("calculator"),
+      ),
+      body: new Container(
+        padding: const EdgeInsets.all(40.0),
+        child: new Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            new TextField(
+              keyboardType: TextInputType.number,
+              decoration: new InputDecoration(
+                hintText: "Enter Number 1"
+              ),
+            ),
+            new TextField(
+              keyboardType: TextInputType.number,
+              decoration: new InputDecoration(
+                hintText: "Enter Number 2"
+              ),
+            ),
+            new Padding(
+              padding: const EdgeInsets.only(top: 20.0),
+            ),
+            new Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                new RaisedButton(
+                  
+                )
+              ],
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
