@@ -36,8 +36,21 @@ class HomePageState extends State<HomePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 new RaisedButton(
-                  
-                )
+                  child: new Text("+"),
+                  onPressed: () {},
+                ),
+                new RaisedButton(
+                  child: new Text("-"),
+                  onPressed: () {},
+                ),
+                new RaisedButton(
+                  child: new Text("*"),
+                  onPressed: () {},
+                ),
+                new RaisedButton(
+                  child: new Text("/"),
+                  onPressed: () {},
+                ),
               ],
             ),
           ],
