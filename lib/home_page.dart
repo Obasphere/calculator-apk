@@ -17,6 +17,13 @@ class HomePageState extends State<HomePage> {
         child: new Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            new Text(
+              "Output :",
+              style: new TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.purple),
+            ),
             new TextField(
               keyboardType: TextInputType.number,
               decoration: new InputDecoration(
@@ -33,22 +40,34 @@ class HomePageState extends State<HomePage> {
               padding: const EdgeInsets.only(top: 20.0),
             ),
             new Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                new RaisedButton(
+                new MaterialButton(
                   child: new Text("+"),
+                  color: Colors.greenAccent,
                   onPressed: () {},
                 ),
-                new RaisedButton(
+                new MaterialButton(
                   child: new Text("-"),
+                  color: Colors.greenAccent,
                   onPressed: () {},
                 ),
-                new RaisedButton(
+              ],
+            ),
+            new Padding(
+              padding: const EdgeInsets.only(top: 20.0),
+            ),
+            new Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                new MaterialButton(
                   child: new Text("*"),
+                  color: Colors.greenAccent,
                   onPressed: () {},
                 ),
-                new RaisedButton(
+                new MaterialButton(
                   child: new Text("/"),
+                  color: Colors.greenAccent,
                   onPressed: () {},
                 ),
               ],
