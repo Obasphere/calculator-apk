@@ -39,6 +39,12 @@ class HomePageState extends State<HomePage> {
       sum = num1 ~/ num2;
     });
   }
+  void doClear() {
+    setState(() {
+      t1.text = "0";
+      t2.text = "0";
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -105,6 +111,19 @@ class HomePageState extends State<HomePage> {
                   child: new Text("/"),
                   color: Colors.greenAccent,
                   onPressed: doDiv,
+                ),
+              ],
+            ),
+            new Padding(
+              padding: const EdgeInsets.only(top: 20.0),
+            ),
+            new Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                new MaterialButton(
+                  child: new Text("Clear"),
+                  color: Colors.greenAccent,
+                  onPressed: doClear,
                 ),
               ],
             ),
